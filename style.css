@@ -1,9 +1,73 @@
 body {
-    background-color: #f0f0f0;
-    font-family: Arial, sans-serif;
-  }
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  /* background: url('background.jpg') no-repeat center center fixed; */
+  background-size: cover;
+  color: black;
+  text-align: center;
+}
 
-* {
-    color: #333;
-    text-align: center;
-  }
+.container {
+  height: 400px;
+  background-color: darkred;
+  padding: 20px;
+  align-self: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.timer {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.5rem;
+  gap: 10px;
+}
+
+.unit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.unit span {
+  font-weight: bold;
+  font-size: 3rem;
+}
+
+.colon {
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 0 10px;
+  align-self: center;
+}
+
+.parallax1 {
+  /* The image used */
+  background-image: url("images/IMG-20241130-WA0003.jpg"); 
+  /* Full height */
+  height: 50vh; 
+  filter: blur(8px);
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax2 {
+  /* The image used */
+  background-image: url("images/IMG-20241130-WA0001.jpg"); 
+  /* Full height */
+  height: 50vh; 
+  filter: blur(8px);
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
