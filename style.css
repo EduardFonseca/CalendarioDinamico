@@ -3,38 +3,7 @@ body {
     font-family: Arial, sans-serif;
   }
 
-/* ADD background */
-h1 {
+* {
     color: #333;
-    text-align: center;
-  }
-
-  .container {
-    width: 80%;
-    margin: auto;
-    overflow: hidden;
-  }
-
-  .header {
-    background: #35424a;
-    color: #ffffff;
-    padding: 20px 0;
-    text-align: center;
-  }
-
-  .header h1 {
-    margin: 0;
-  }
-
-  .nav {
-    display: flex;
-    justify-content: center;
-    background-color: #35424a;
-  }
-
-  .nav a {
-    color: #ffffff;
-    padding: 14px 20px;
-    text-decoration: none;
     text-align: center;
   }
