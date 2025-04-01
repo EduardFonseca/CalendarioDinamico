@@ -8,13 +8,18 @@ body {
   text-align: center;
 }
 
+.text {
+  color: white;
+  text-justify: inter-word;
+}
+
 .container {
-  height: 400px;
-  background-color: darkred;
+  background-color: rgb(139, 0, 0, 0.75);
   padding: 20px;
   align-self: center;
   justify-content: center;
   align-items: center;
+  text-justify: inter-word;
 }
 
 .timer {
@@ -44,30 +49,56 @@ body {
   align-self: center;
 }
 
-.parallax1 {
-  /* The image used */
-  background-image: url("images/IMG-20241130-WA0003.jpg"); 
-  /* Full height */
-  height: 50vh; 
-  filter: blur(8px);
 
+.caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+
+.caption span.border {
+  background-color: darkred;
+  color: #fff;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
+}
+
+.parallax1, .parallax2 {
+  position: relative;
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+
+  opacity: 0.75;
+}
+
+.parallax1{
+    /* The image used */
+    background-image: url("images/IMG-20241130-WA0003.jpg"); 
+    /* Full height */
+    height: 80vh; 
+    /* filter: blur(8px); */
+    /* -webkit-filter: blur(8px); */
 }
 
 .parallax2 {
   /* The image used */
   background-image: url("images/IMG-20241130-WA0001.jpg"); 
   /* Full height */
-  height: 50vh; 
-  filter: blur(8px);
+  height: 80vh; 
+  /* filter: blur(8px); */
+  /* -webkit-filter: blur(8px); */
+}
 
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+  .parallax1, .parallax2 {
+    background-attachment: scroll;
+  }
 }
